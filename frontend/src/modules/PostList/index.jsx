@@ -107,7 +107,7 @@ const pages = usePagination(posts.count, filter.limit, filter.offset);
     loading={isLoading}
     error={error}
     loader={[...new Array(filter.limit)].map((_, i) => <PostLoader key={i} />)}
-    noItems={<NoItems type="search" />}
+    noItems={<NoItems type="search" message="Ничего не найдено"/>}
     dataItem={(post) => <PostItem key={post.id}
     post={post}
     likeHandler={handleLike} 
