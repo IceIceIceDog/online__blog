@@ -63,7 +63,7 @@ class UserService{
 
      if (!user) throw APIError.badRequest('Неверный адрес электронной почты');
 
-     const isPasswordsEqual =   bcrypt.compare(password, user.password);
+     const isPasswordsEqual =  await bcrypt.compare(password, user.password);
 
      if (!isPasswordsEqual) throw APIError.badRequest('Неверный пароль');
 
