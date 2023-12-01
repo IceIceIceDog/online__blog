@@ -1,0 +1,35 @@
+@import '../../../../assets/style/variables';
+
+
+.search__input__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor:text !important;
+    background: var(--light-background);
+    border: 1px solid var(--contrast-color-default);
+    input[type=text]{
+        border: none !important;
+        background: transparent !important;
+        flex: 1 1 auto;
+        font-size: 20px;
+        cursor: inherit;
+    }
+    .icon__button{
+       background: transparent;
+       color: inherit;
+       svg{
+        font-size: 24px;
+        color: inherit;
+       }
+       &.exit{
+        color: white;
+        background: var(--contrast-color-default);
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+       }
+    }
+    }

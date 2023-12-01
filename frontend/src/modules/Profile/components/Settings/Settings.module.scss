@@ -1,0 +1,38 @@
+@import '../../../../assets/style/variables';
+
+.profile__settings{
+     .settings__tabs{
+        margin-bottom: 40px;
+        padding: 40px 20px;
+        border-radius: 10px;
+        background-color: var(--light-background);
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        @media (max-width: 408px){
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+     &__tablist{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    .tablist__item{
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-bottom: 10px;
+        cursor: pointer;
+        @media (min-width: 1180px){
+            &:hover{
+                color: var(--contrast-color-default);
+            }
+        }
+        &.active{
+           border-bottom:  2px solid var(--contrast-color-default);
+           color: var(--contrast-color-default);
+        }
+    }
+     }
+     }
+}

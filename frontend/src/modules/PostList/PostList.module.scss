@@ -1,0 +1,19 @@
+.posts__wrapper{
+  max-width: 931px;
+  flex: 1 1 auto;
+  @media (max-width: 1400px){
+    margin-top: 30px;
+  }
+  .postlist__title{
+    font-size: 24px;
+    font-weight: bold;
+     margin-bottom: 30px;
+     padding-bottom: 20px;
+     border-bottom: 1px solid #e7e4e4;
+   }
+  .post__list{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}

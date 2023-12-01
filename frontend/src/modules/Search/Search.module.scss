@@ -1,0 +1,20 @@
+@import '../../assets/style/variables';
+
+.search__wrapper{
+    .post__list{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .search__title{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--line-color-default);
+            div{
+                max-width: 50px !important;
+            }
+        }
+        }
+}

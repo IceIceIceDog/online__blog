@@ -1,0 +1,40 @@
+@import '../../assets/style//variables';
+
+.post__comments{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+ 
+.comments__header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__title{
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--line-color-default);
+    }
+
+    .add__comment{
+        .comments__form{
+            textarea{
+               width: 100%;
+               height: 100px;
+            }
+            &__buttons{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+    .comments__list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

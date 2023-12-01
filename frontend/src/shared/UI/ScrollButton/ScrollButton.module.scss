@@ -1,0 +1,36 @@
+@import '../../../assets/style/variables';
+
+.scroll__button{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ font-size: 24px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: var(--contrast-color-default);
+ color: white;
+ position: fixed;
+ right: 60px;
+ bottom: 300px;
+ z-index: 10000;
+ transition: all .3s ease;
+ visibility: hidden;
+ opacity: 0;
+ transform: translateY(50px); 
+ &.visible{
+   visibility: visible;
+   opacity: 1;
+   transform: translateY(0px); 
+ }
+ @media (max-width: 900px){
+    right: 10px;
+ }
+ @media (min-width: 1180px){
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+ }
+}

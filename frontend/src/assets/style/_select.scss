@@ -1,0 +1,62 @@
+@import './_variables.scss';
+
+
+.custom-select{
+  &__control{
+    border-color: var(--line-color-default);
+    border-radius: 10px !important;
+    background-color: var(--light-background) !important;
+
+&--menu-is-open {
+    border-color: var(--line-color-default);
+}
+&--is-focused {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--line-color-default);
+}
+  }
+
+  &__indicator{
+    color: var(--color-default) !important;
+    opacity: 0.5;
+    @media (min-width: 1180px) {
+        &:hover{
+            opacity: 1 !important;
+        }
+    }
+  }
+
+  &__value-container{
+    .custom-select__single-value{
+        color: var(--color-default);
+    }
+    .custom-select__multi-value{
+        background: var(--hover--background-default);
+    }
+  }
+ 
+  &__input-container{
+    cursor: text;
+}
+
+&__multi-value__label{
+    
+    background-color: #e0dcdc !important;
+    padding: 3px;
+}
+
+&__multi-value__remove{
+    cursor: pointer;
+}
+
+&__option{
+    cursor: pointer !important;
+} 
+
+
+&__menu{
+    background-color: var(--body-background-default) !important;
+    border: 1px solid var(--color-default) !important;
+}
+}

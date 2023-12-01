@@ -1,0 +1,90 @@
+
+@import 'https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap';
+@import './_templates.scss';
+@import './_variables.scss';
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Nunito sans', sans-serif;
+    background: var(--body-background-default);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+body, h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+input, textarea{
+    font: inherit;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
+
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+
+}
+
+button, input, a, label{
+    cursor: pointer;
+}
+
+main{
+    @extend %container;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    background: var(--body-background-default);
+    color: var(--color-default);
+    min-height: 100vh;
+&.main{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1400px){
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    @media (max-width: 1100px){
+        margin-top: 90px;
+    }
+}
+&.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+&.unset{
+    margin-top: 100px;
+    @media (max-width: 1100px){
+        margin-top: 120px;
+    }
+}
+}
+
+
+

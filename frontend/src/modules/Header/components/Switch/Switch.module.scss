@@ -1,0 +1,44 @@
+@import '../../../../assets/style/variables';
+
+.switch{
+    position: relative;
+    width: 60px;
+    height: 20px;
+    float: right;
+ &__input{
+    opacity: 0;
+    visibility: hidden;
+ }
+ &__slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #cbc7c7;
+    border-radius: 30px;
+    border: 1px solid var(--color-default);
+    &::before{
+      content: '';
+      position: absolute;
+      cursor: pointer;
+      left: 2px;
+      bottom: 0px;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 100%;
+      transition: all .4s ease;
+      background: url('../../../../assets/images/sun-svgrepo-com.svg');
+    }
+ }
+ &__input:checked + &__slider{
+    background-color: black;
+ }
+ &__input:checked + &__slider::before{
+    left: auto;
+    right: 2px;
+    background: url('../../../../assets/images/moon-phases-moon-svgrepo-com.svg');
+ }
+}

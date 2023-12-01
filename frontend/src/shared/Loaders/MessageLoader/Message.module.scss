@@ -1,0 +1,31 @@
+@import '../../../assets/style/variables';
+
+.message__loader{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 10vh;
+    animation: loading 2s linear infinite alternate;
+}
+
+.ibg__message{
+    width: 100px;
+    height: 100%;
+    border-radius: 5px;
+    background: var(--hover-background-default);
+}
+.message__body{
+    width: 80%;
+   border-radius: 5px;
+   height: 100%;
+   background: var(--hover-background-default);
+}
+
+@keyframes loading{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.2;
+    }
+}

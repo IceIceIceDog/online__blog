@@ -1,0 +1,10 @@
+.post__wrapper{
+    max-width: 931px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1 1 auto;
+    @media (max-width: 1250px){
+        margin-top: 60px;
+      }
+}

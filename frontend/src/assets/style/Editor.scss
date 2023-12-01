@@ -1,0 +1,18 @@
+@import './variables';
+
+.ck{
+    color: var(--color-default) !important;
+    height: 500px;
+
+    &:not(.ck-color-selector, .ck-button){
+        background-color: var(--body-background-default) !important;
+    }
+
+    &.ck-balloon-panel.ck-balloon-panel_visible{
+        display: none !important;
+    }
+
+    &.ck-balloon-panel.ck-powered-by-balloon[class*=position_border]{
+        border-color: var(--color-default) !important;
+    }
+}

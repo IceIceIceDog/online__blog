@@ -1,0 +1,58 @@
+$maxWidth: 1440px;
+$background-light: #FFFFFF;
+$background-dark: #000000;
+$contrast-color-light: #AD0606;
+$contrast-color-dark: #0d99ff;
+$contrast-hover-light: #c70d0d;
+$contrast-hover-dark: #46adf6a2;
+$color-light: #000;
+$color-dark: #fff;
+$hover-background-light: #ddd8d8;
+$hover-background-dark: #c0e1f8e4;
+$line-color-light: #B2B2B2;
+$line-color-dark: #fff;
+$boxshadow-light: rgba(34, 60, 80, 0.19);
+$boxshadow-dark: #FFFFFF;
+$overlay-modal-light: rgba(0, 0, 0, 0.3);
+$overlay-modal-dark: #c0e1f8a1;
+
+
+
+
+:root{
+    --body-background-default: #{$background-light};
+    --body-background-light: #{$background-light};
+    --body-background-dark: #{$background-dark};
+
+    --color-default: #{$color-light};
+    --color-light: #{$color-light};
+    --color-dark: #{$color-dark};
+
+    --contrast-color-default: #{$contrast-color-light};
+    --contrast-color-light: #{$contrast-color-light};
+    --contrast-color-dark: #{$contrast-color-dark};
+
+    --hover-background-default: #{$hover-background-light};
+    --hover-background-light: #{$hover-background-light};
+    --hover-background-dark: #{$hover-background-dark};
+
+    --contrast-hover-default: #{$contrast-hover-light};
+    --contrast-hover-light: #{$contrast-hover-light};
+    --contrast-hover-dark: #{$contrast-hover-dark};
+
+
+    --line-color-default: #{$line-color-light};
+    --line-color-light: #{$line-color-light};
+    --line-color-dark: #{$line-color-dark};
+
+    --box-shadow-default: #{$boxshadow-light};
+    --box-shadow-light: #{$boxshadow-light};
+    --box-shadow-dark: #{$boxshadow-dark};
+
+    --overlay-modal-default: #{$overlay-modal-light};
+    --overlay-modal-light: #{$overlay-modal-light};
+    --overlay-modal-dark: #{$overlay-modal-dark};
+
+    --light-background: #c1b5b51a;
+
+}

@@ -1,0 +1,19 @@
+.feed__wrapper{
+    max-width: 931px;
+    flex: 1 1 auto;
+  @media (max-width: 1400px){
+    margin-top: 60px;
+  }
+    .feed__title{
+        font-size: 24px;
+        font-weight: bold;
+         margin-bottom: 30px;
+         padding-bottom: 20px;
+         border-bottom: 1px solid #e7e4e4;
+    }
+    .feed__list{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+}

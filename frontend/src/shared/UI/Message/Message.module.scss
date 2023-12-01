@@ -1,0 +1,19 @@
+@import '../../../assets/style/variables';
+
+.message{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        padding: 5px 40px;
+        text-align: center;
+        background: var(--contrast-color-default);
+        color: white;
+        border-radius: 5px;
+    }
+}

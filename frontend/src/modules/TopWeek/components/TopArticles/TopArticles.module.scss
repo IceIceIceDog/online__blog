@@ -1,0 +1,28 @@
+ @import '../../../../assets/style/variables.scss';
+
+.articles__container{
+    .topArticles__title{
+        color: var(--contrast-color-default);
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .topArticles{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @media (max-width: 1400px){
+          flex-direction: row;
+          gap: 40px;
+          overflow: auto;
+          padding-bottom: 30px;
+        }
+        @media (max-width: 350px){
+          gap: 20px;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,38 @@
+@import '../../assets/style/_templates';
+
+.form__wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    .registration__form{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        @extend %defaultboxshadow;
+        & > *{
+            width: 100%;
+        }
+        &__title{
+            font-size: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+    .login__errors{
+        color: 	#FF3333;
+        .error__list{
+            .error__item:not(:last-child){
+               margin-bottom: 10px;
+            }
+        }
+    }
+}
+

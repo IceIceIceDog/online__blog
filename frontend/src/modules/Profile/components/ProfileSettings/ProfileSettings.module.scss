@@ -1,0 +1,38 @@
+@import '../../../../assets/style/variables';
+
+.profile__settings__wrapper{
+    .profile__settings__title{
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--line-color-default);
+        margin-bottom: 20px;
+    }
+    .profile__edit{
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 10px;
+        @media (max-width: 700px){
+            width: 100%;
+        }
+        @media (max-width: 350px){
+            padding: 0;
+        }
+        input[type=text], input[type=password]{
+           min-width: 300px;
+        }
+     &__buttons{
+        margin-top: auto;
+        align-self: flex-end;
+        display: flex;
+        gap: 20px;
+        @media (max-width: 700px){
+           flex-direction: column;
+           align-self: flex-start;
+           width: 100%;
+        }
+     }
+    }
+}

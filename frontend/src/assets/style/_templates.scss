@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+
+%defaultboxshadow{
+    -webkit-box-shadow: 0px 5px 15px 3px var(--box-shadow-default);
+    -moz-box-shadow: 0px 5px 15px 3px var(--box-shadow-default);
+    box-shadow: 0px 5px 15px 3px var(--box-shadow-default);
+}
+
+%defaultbutton{
+    color: white;
+    font-size: inherit;
+    background: var(--contrast-color-default);
+    border-radius: 5px;
+    line-height: 150%;
+    transition: background .3s ease;
+    @media (min-width: 1180px){
+        &:hover{
+            background: var(--contrast-hover-default);
+        }
+    }
+}
+
+%defaultbuttoninverse{
+    color: var(--contrast-color-default);
+    font-size: inherit;
+    background: var(---color-default);
+    border: 2px solid var(--contrast-color-default);
+    border-radius: 5px;
+    line-height: 150%;
+    transition: background .3s ease;
+    @media (min-width: 1180px){
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+%container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+    @media (max-width: 500px){
+        padding: 0 10px;
+    }
+}

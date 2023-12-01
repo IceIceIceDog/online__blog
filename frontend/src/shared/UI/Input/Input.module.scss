@@ -1,0 +1,11 @@
+@import '../../../assets/style/variables.scss';
+
+.text__input{
+    font-size: inherit;
+    background: var(--light-background);
+    color: var(--color-default);
+    border: 1px solid var(--line-color-default);
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+}

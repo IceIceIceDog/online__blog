@@ -1,0 +1,61 @@
+@import '../../../../assets/style/variables';
+@import '../../../../assets/style/templates';
+
+.messages__wrapper{
+    .messages__header{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 110px;
+    &__menu{
+        position: relative;
+        z-index: 200;
+        .icon__button{
+            font-size: 16px;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+            color: var(--contrast-color-default);
+        }
+    }
+}
+
+.messages__main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+}
+
+.header__menu__dropdown{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    white-space: nowrap;
+    border-radius: 5px;
+    background: #c1b5b51a;
+    @extend %defaultboxshadow;
+    transition: all .3s ease;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    &.open{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+.dropdown__list{
+&__item{
+    background: inherit;
+    padding: 15px;
+    width: 100%;
+    &:hover{
+        background: lighten(#c1b5b51a, 10%);
+    }
+}
+
+}
+}

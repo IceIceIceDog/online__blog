@@ -1,0 +1,25 @@
+.post__wrapper{
+    flex: 1 1 auto;
+    .post__edit__title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .post__edit{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    & > *{
+        width: 100%;
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    }
+}

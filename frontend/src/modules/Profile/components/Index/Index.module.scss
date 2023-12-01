@@ -1,0 +1,16 @@
+.main__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+  
+.data__title{
+    font-weight: 500;
+}
+
+ .main__data__item{
+    span:last-child{
+        margin-left: 10px;
+    }
+ }
+}

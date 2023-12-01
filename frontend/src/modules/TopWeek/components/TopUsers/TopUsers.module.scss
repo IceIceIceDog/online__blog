@@ -1,0 +1,60 @@
+@import '../../../../assets/style/variables';
+
+.users__container{
+    .topUsers__title{
+        color: var(--contrast-color-default);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .topUsers{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width: 1400px){
+            flex-direction: row;
+            gap: 40px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            padding-bottom: 30px;
+          }
+        &__user{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 1400px){
+                gap: 40px;
+              }
+        .user__container{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        .ibg__user{
+            width: 50px;
+            height: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+        }
+        .username{
+            font-weight: bold;
+            font-size: 14px;
+            transition: color .3s ease;
+            @media (min-width: 1180px){
+                &:hover{
+                    color: var(--contrast-color-default);
+                }
+            }   
+        }
+        }
+        .user__rate{
+            opacity: 0.5;
+            white-space: nowrap;
+        }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import '../../../assets/style/_templates.scss';
+
+
+.default__button{
+    @extend %defaultbutton;
+    &:disabled{
+        opacity: 0.5;
+    }
+}
+
+.inverse__button{
+    @extend %defaultbuttoninverse;
+    &:disabled{
+        opacity: 0.5;
+    }
+}

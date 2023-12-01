@@ -1,0 +1,130 @@
+.comment__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .comment__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    .comment__user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 450px){
+        flex-direction: column;
+        gap: 5px;
+    }
+    .ibg__user{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+        }
+      }
+      .username{
+        all: unset;
+        font-weight: bold;
+      }
+    }
+    .user__buttons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button{
+            font-size: 16px;
+            background: inherit;
+        }
+        .icon__button{
+            color: var(--color-default);
+            transition: all .3s ease;
+            opacity: 0.5;
+            @media (min-width: 1180px){
+                &:hover{
+                    transform: scale(1.05);
+                    opacity: 1;
+                }
+             }
+            &.editing{
+                color: var(--contrast-color-default);
+            }
+        }
+    }
+    }
+
+    .comment__date{
+        opacity: 0.5;
+    }
+
+    .comment__content{
+        .edit__form{
+            textarea{
+                width: 100%;
+                height: 100px;
+             }
+             &__buttons{
+                 display: flex;
+                 gap: 20px;
+                 align-items: center;
+                 justify-content: flex-end;
+                 margin-top: 15px;
+                 button{
+                    font-size: 16px;
+                    background: inherit;
+                }
+                .icon__button{
+                    color: var(--color-default);
+                    transition: all .3s ease;
+                    opacity: 0.5;
+                    @media (min-width: 1180px){
+                        &:hover{
+                            transform: scale(1.05);
+                            opacity: 1;
+                        }
+                     }
+                }
+             }
+        }
+    }
+
+
+    .comment__buttons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button{
+            font-size: 16px;
+            background: inherit;
+        }
+    .icon__button{
+        color: var(--color-default);
+        transition: all .3s ease;
+        span{
+            opacity: 0.5;
+        }
+        span.liked{
+            color: green;
+            opacity: 1;
+        }
+        span.disliked{
+            color: #AD0606;
+            opacity: 1;
+        }
+        svg{
+            margin-left: 5px;
+        }
+        @media (min-width: 1180px){
+            &:hover{
+                transform: scale(1.05);
+                opacity: 1;
+            }
+         }
+    }
+    }
+}

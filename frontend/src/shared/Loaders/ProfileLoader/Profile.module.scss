@@ -1,0 +1,75 @@
+@import '../../../assets/style/variables';
+
+.profile__loader{
+    .user__data{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: loading 2s linear infinite alternate;
+        @media(max-width: 800px){
+          justify-content: center;
+        }
+    .user{
+        display: flex;
+        gap: 40px;
+        @media(max-width: 800px){
+            flex-direction: column;
+        }
+    .user__avatar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .ibg__user{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            background: var(--hover-background-default);
+        }
+    span{
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        background: var(--hover-background-default);
+    }
+    }
+    .user__statistic{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    .username{
+        width: 120px;
+        height: 30pxs;
+        background: var(--hover-background-default);
+        border-radius: 5px;
+    }
+    &__info{
+        display: flex;
+        gap: 20px;
+    span{
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        background: var(--hover-background-default);
+    }
+    }
+    }
+    }
+    }
+    .profile__navbar{
+        margin-top: 20vh;
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        background: var(--hover-background-default);
+    }
+}
+
+@keyframes loading{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.2;
+    }
+}

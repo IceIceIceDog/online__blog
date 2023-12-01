@@ -1,0 +1,17 @@
+.top{
+    .topweek__container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 320px;
+        @media (max-width: 1400px){
+            width: auto;
+        }
+    }
+    .topweek__title{
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}
+
