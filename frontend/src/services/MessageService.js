@@ -1,4 +1,4 @@
-import apiService from "../api";
+import { apiService } from "../api";
 import { setAction } from "../store/messageReducer";
 
 export default class MessageService{

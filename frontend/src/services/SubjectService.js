@@ -1,4 +1,4 @@
-import apiService from '../api';
+import { apiService } from '../api';
 
 export default class SubjectService{
     static async getAll(){

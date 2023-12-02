@@ -2,6 +2,7 @@
 import '../../../assets/style/Editor.scss';
 import Editor from 'ckeditor5-custom-build/build/ckeditor';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
+import { REST_URL } from '../../../api';
 
 
 
@@ -20,7 +21,7 @@ const TextEditor = ({value, changeHandler}) => {
       initialData: value || '',
       _watchdogInitialData: value || '',
       ckfinder: {
-        uploadUrl: 'http://localhost:7000/api/posts/image/insert'
+        uploadUrl: `${REST_URL}/posts/image/insert`
       }
 
     }}

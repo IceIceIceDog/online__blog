@@ -1,5 +1,5 @@
 
-import apiService from "../api";
+import { apiService } from "../api";
 
 export default class BookmarkService{
     static async addBookmark(postId, userId){

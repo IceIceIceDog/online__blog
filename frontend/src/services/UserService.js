@@ -1,4 +1,4 @@
-import apiService from '../api';
+import { apiService, REST_URL } from '../api';
 import axios from 'axios';
 import { loginAction, logoutAction, errorHandlerAction, setLoading } from '../store/userReducer';
 
@@ -48,7 +48,7 @@ export default class UserService{
    static refresh(){
       return dispatch => {
          dispatch(setLoading(true));
-        axios.get('http://localhost:7000/api/users/token/refresh', {withCredentials: true})
+        axios.get(`${REST_URL}/users/token/refresh`, {withCredentials: true})
         .then(res => {
             dispatch(loginAction(res.data.user));
             localStorage.setItem('token', res.data.accessToken);

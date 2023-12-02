@@ -2,10 +2,9 @@ import axios from 'axios';
 
 
 
-const REST_URL = 'http://localhost:7000/api';
+export const REST_URL = process.env.NODE_ENV === "production" ? "http://89.104.66.44/api" : "http://localhost:7000/api";
 
-
-const apiService = axios.create({
+export const apiService = axios.create({
     withCredentials: true,
     baseURL: REST_URL
 });
@@ -39,4 +38,3 @@ apiService.interceptors.response.use((config) => {
  }
 )
 
-export default apiService;

@@ -1,4 +1,4 @@
-import apiService from "../api";
+import { apiService } from "../api";
 
 export default class CommentService{
     static async getAllPostComments(postId, limit, offset){
